@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav_list li{
+    margin-right: 30px;
+}
+
+.nav_list li a{
+    color: black;
+}
+
+
+.nav_list li a:hover{
+    color: #06D001;
+    /* color: rgba(255, 255, 255, .59); */
+}
+
+
+section.home, section.abt, section.srv, section.app{
+    height: 100vh;
+}
+
+.home-ctn, .abt-ctn, .app-ctn, .contact-ctn{
+    display: flex;
+}
+
+.home-ctn .left, .home-ctn .right, .abt-ctn .left, .abt-ctn .right, .app-ctn .left, .app-ctn .right, .contact-ctn .right, .contact-ctn .left{
+    width: 45%;
+}
+
+.home-ctn .left{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 350px;
+    padding-left: 150px;
+    line-height: 1;
+}
+
+.home-ctn .left h1{
+    font-size: 45px;
+}
+
+.home-ctn .left button{
+    background-color: #06D001;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(.9);
+    transition: all .5s;
+}
+
+.home-ctn .left button:hover{
+    /* background: #fff; */
+    transform: scale(1);
+}
+
+.home-ctn .right{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-ctn .right img{
+    width: 500px;
+}
+
+
+.abt-ctn .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+.abt-ctn .left img{
+    width: 400px;
+    border-radius: 28px;
+}
+
+.abt-ctn .right{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.abt-ctn .right h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: #06D001;
+}
+
+.abt-ctn .right h3{
+    color: #000;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.abt-ctn .right p{
+    font-size: 20px;
+    /* border: 1px solid yellow; */
+    margin-right: 150px;
+    line-height: 1.5;
+    /* font-weight: 500; */
+    color: black;
+}
+
+.abt-ctn .right button{
+    background-color: #06D001;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(.9);
+    transition: all .5s;   
+}
+
+.abt-ctn .right button:hover{
+    transform: scale(1);
+}
+
+
+.srv-ctn .heading h1{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 120px;
+    color: #000;
+}
+
+.srv-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.srv-cont .card img{
+    width: 90px;
+    height: 90px;
+    padding-left: 15px;
+}
+
+.srv-cont .card{
+    width: 400px;
+    height: 280px;
+    margin-right: 40px;
+    padding: 28px 20px;
+    /* background-color: #fff; */
+    border: 2px solid #ececec;
+    /* box-shadow: 0 0 20px #000; */
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+.srv-cont .card:hover{
+    transform: scale(1.1);
+}
+
+.srv-cont .card h1{
+    color: #06D001;
+    font-size: 25px;
+}
+
+.srv-cont .card p{
+    font-size: 20px;
+}
+
+.app-ctn{
+    padding-top: 85px;
+}
+
+.app-ctn img{
+    width: 450px;
+}
+
+.app-ctn .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-ctn .right{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    line-height: 1.1;
+}
+
+
+.app-ctn .right h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.app-ctn .right h1{
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+
+.app-ctn .right button{
+    background-color: #06D001;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(.9);
+    transition: all .5s;   
+}
+
+.app-ctn .right button:hover{
+    transform: scale(1);
+}
+
+.contact-ctn{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+    text-align: center;
+}
+.contact-ctn .left h3{
+    font-size: 20px;
+}
+
+.contact-ctn .left h1{
+    font-size: 35px;
+}
+
+.contact-ctn .left p{
+    font-size: 20px;
+}
+
+.contact-ctn .right button{
+    background-color: #06D001;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(1);
+    transition: all .5s;   
+}
+
+.contact-ctn .right button:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    /* border: 1px solid yellow; */
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: -50px;
+    /* height: 25%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .ctn1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    width: 380px;
+}
+
+.footer .foot-logo{
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.footer .social-icons i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.footer .social-icons i:hover{
+    color: #06D001;
+}
+
+.ctn1 .footer-list li a{
+    color: #000;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.ctn1 .footer-list li a:hover{
+    color: #06D001;
+}
+
+.footer .ctn1 p.add{
+    margin-right: -10px;
+}
+
+.footer .ctn1 h1{
+    font-size: 20px;
+}
+
+.footer .ctn1 p{
+    font-size: 15px;
+}
